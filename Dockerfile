@@ -6,6 +6,10 @@ RUN apk add --no-cache bash python3 python3-dev gcc \
     libffi-dev openssl-dev \
     libxml2 libxml2-dev \
     libxslt libxslt-dev \
+    libc-dev linux-headers \
+    mariadb-dev postgresql-dev \
+    freetype-dev libpng-dev \
+    libxml2-dev libxslt-dev \
     libjpeg-turbo-dev zlib-dev && \
     if [ ! -e /usr/bin/python ]; then ln -sf python3 /usr/bin/python ; fi && \
     \
