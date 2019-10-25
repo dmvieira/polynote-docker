@@ -10,5 +10,5 @@ docker pull dmvieira/polynote
 ## Running
 
 ```
-docker run -it -p 8192:8192 polynote
+docker run -it -p 8192:8192 dmvieira/polynote
 ```
