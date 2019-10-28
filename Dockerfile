@@ -18,7 +18,7 @@ RUN apk add --no-cache bash python3 python3-dev gcc \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --no-cache --upgrade pip setuptools wheel && \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
-    pip3 install --no-cache jep jedi virtualenv pyspark numpy pandas matplotlib
+    pip3 install --no-cache jep jedi virtualenv numpy pandas matplotlib
 
 # Install build dependencies
 RUN apk add --no-cache --virtual=.dependencies tar wget
